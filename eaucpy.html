@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="so">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EAU - Example University</title>
+    <link rel="stylesheet" href="eaucpy.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <img src="asad.jpg" alt="EAU Logo">
+                <span>EAU</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <h1>Welcome to taleh secondr</h1>
+                <p>Excellence in education, research, and community service.</p>
+                <div class="hero-cta">
+                    <a class="btn primary" href="#">Apply Now</a>
+                    <a class="btn outline" href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick links / cards -->
+        <section class="features container">
+            <article class="card">
+                <h3>Undergraduate</h3>
+                <p>Programs &amp; degrees for bachelor students.</p>
+                <a href="#" class="link">Explore</a>
+            </article>
+
+            <article class="card">
+                <h3>Postgraduate</h3>
+                <p>Masters and PhD opportunities.</p>
+                <a href="#" class="link">Explore</a>
+            </article>
+
+            <article class="card">
+                <h3>Research</h3>
+                <p>Our research centers and publications.</p>
+                <a href="#" class="link">Explore</a>
+            </article>
+        </section>
+
+        <!-- News -->
+        <section class="news container">
+            <h2>Latest News</h2>
+            <div class="news-grid">
+                <article class="news-item">
+                    <img src="ayub.jpg" alt="">
+                    <h4>EAU opens new research lab</h4>
+                    <p>Short description of the event or announcement.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </article>
+
+                <article class="news-item">
+                    <img src="barre.jpg" alt="">
+                    <h4>Admissions for 2026 now open</h4>
+                    <p>Key dates and how to apply.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </article>
+
+                <article class="news-item">
+                    <img src="xaydh.jpg" alt="">
+                    <h4>Community outreach program</h4>
+                    <p>Our students volunteer across local communities.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer CTA -->
+        <section class="cta container">
+            <div class="cta-inner">
+                <h3>Have questions?</h3>
+                <p>Contact our admissions office for guidance and help.</p>
+                <a href="#" class="btn primary">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h4>EAU</h4>
+                <p>Excellence in education and research.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: info@taleh.so</p>
+                <p>Phone: +252 6X XXX XXXX</p>
+            </div>
+        </div>
+        <div class="site-copy">
+            <div class="container">© <span id="year"></span> EAU. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        // small script: update year & mobile menu toggle
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.main-nav');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>

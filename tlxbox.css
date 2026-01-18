@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: blue;
+    width: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: red;
+    width: 325px;
+
+}
+
+.card-content {
+    font-size: 26px;
+    align-items: center;
+}
+
+.card-contents p {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    color: gray;
+}

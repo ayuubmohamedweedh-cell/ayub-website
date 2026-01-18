@@ -1,0 +1,145 @@
+<body>
+    <div class="container">
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+
+            <li>
+                <a href="#">academics</a>
+                <ul class="dropdown">
+                    <li><a href="#">undergraduate programs</a></li>
+                    <li><a href="#">postgraduate programs</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">admissions</a>
+                <ul class="dropdown">
+                    <li><a href="">how to uply</a></li>
+                </ul>
+            </li>
+            <li><a href="#">faculty and finnacy</a></li>
+
+            <li>
+                <a href="#">admissions</a>
+                <ul class="dropdown">
+                    <li><a href="#">rectors office</a></li>
+                    <li><a href="#">vice rector</a></li>
+                    <li><a href="#">registrar</a></li>
+                    <li><a href="#">organizational structure</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">about</a>
+                <ul class="dropdown">
+                    <li><a href="">history & missions</a></li>
+                    <li><a href="">leadrship</a></li>
+                    <li><a href="">campuses</a></li>
+                    <li><a href="">accreditations</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">research</a>
+                <ul class="dropdown">
+                    <li><a href="">research output</a></li>
+                    <li><a href="">research projects</a></li>
+
+                </ul>
+            <li><a href="#">alumni</a></li>
+            </li>
+
+        </ul>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+
+            .container {
+                background: #4fb3c3;
+                padding: 15px 18px;
+                padding: 15px;
+            }
+
+            .nav-menu {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                flex-wrap: wrap;
+            }
+
+            .nav-menu li {
+                position: relative;
+            }
+
+            .nav-menu li a {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                display: block;
+                padding: 10px 15px;
+
+                font-weight: 500;
+                flex-wrap: wrap;
+
+            }
+
+            .nav-menu a:hover {
+                color: white;
+
+            }
+
+            .dropdown {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: white;
+                min-width: 180px;
+                list-style: none;
+            }
+
+            .dropdown li a {
+                color: #4fb3c3;
+                padding: 10px 15px;
+
+
+            }
+
+            .dropdown li a:hover {
+                color: #4fb3c3;
+                color: #4fb3c3;
+            }
+
+            .nav-menu li:hover .dropdown {
+                display: block;
+            }
+
+            @media(max-width:768px) {
+                .nav-menu {
+                    flex-direction: column;
+                }
+            }
+        </style>
+
+    </head>
+
+
+
+
+
+</body>
+
+</html>

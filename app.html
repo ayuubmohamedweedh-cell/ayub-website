@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Taleh Secondary School</title>
+    <a href="talehsecon.html" class="home-btn">🏠 Home</a>
+
+
+
+</head>
+
+<body>
+    <script>
+        const portalBtn = document.getElementById('portalBtn');
+        const popupForm = document.getElementById('popupForm');
+        const closePopup = document.getElementById('closePopup');
+
+        portalBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            popupForm.style.display = 'flex';
+        });
+
+        closePopup.addEventListener('click', function () {
+            popupForm.style.display = 'none';
+        });
+
+        // Close popup if user clicks outside content
+        window.addEventListener('click', function (e) {
+            if (e.target === popupForm) {
+                popupForm.style.display = 'none';
+            }
+        });
+    </script>
+
+    <div class="contact-box">
+        <h1>Ku Soo Dhawoow Taleh Secondary School 555555</h1>
+        <h2>Kala Xiriir Wixii Faahfaahin</h2>
+        <p>
+            Taleh Secondary School waa iskuul heer sare ah oo bixiya waxbarasho tayo leh iyo hanuunin ardayda.
+            Haddii aad u baahan tahay macluumaad dheeraad ah ama aad rabto inaad nala soo xiriirto,
+            fadlan isticmaal lambarka hoose ama iimaylka si toos ah ula xiriir maamulka.
+        </p>
+        <p><strong>Maamulaha:</strong> Osman Abdi Duale</p>
+        <p><strong>Tel:</strong> 09076690000</p>
+
+
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+            padding: 60px;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 32px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        .contact-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            width: 70%;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background: #0056b3;
+        }
+    </style>
+</body>
+
+</html>
